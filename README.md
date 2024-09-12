@@ -5,24 +5,22 @@ Initial Setup:
 
 Clone or copy the HTML/CSS project.
 Set up a new React project with:
-sh
-Copy code
+
 npx create-react-app@latest backroads-app
 Run the development server:
-sh
-Copy code
+
 npm start
 Basic React App Structure:
 
 Modify src/index.js to render the <App /> component.
 Import global styles in index.js.
 Refactor the App.js file to initially contain:
-js
-Copy code
+
 function App() {
   return <h1>Backroads App</h1>;
 }
 export default App;
+
 Copying Assets & Initial Setup:
 
 Copy images from the HTML project to src.
@@ -42,14 +40,12 @@ Import and render these components in App.js to keep the main file clean.
 Fixing Images:
 
 Use import to reference images properly within components, such as:
-js
-Copy code
+
 import logo from '../images/logo.svg';
 Smooth Scrolling:
 
 Add smooth scrolling by modifying the HTML and CSS:
-html
-Copy code
+
 <a href="#services"> services </a>
 <section id="services"></section>
 css
@@ -60,11 +56,11 @@ html {
 .section {
   scroll-margin-top: 4rem;
 }
+
 Refactor Repeating Code:
 
 For repeating items (e.g., navigation links), create a data.js file to store the data:
-js
-Copy code
+
 export const pageLinks = [
   { id: 1, href: '#home', text: 'home' },
   { id: 2, href: '#about', text: 'about' },
@@ -78,8 +74,7 @@ Final Touches:
 
 Update Hero, About, Services, and Footer with any necessary fixes like image paths or dynamic content.
 Ensure the current year is displayed in the footer:
-js
-Copy code
+
 <span id="date">{new Date().getFullYear()}</span>
 Optional Enhancements:
 
@@ -89,8 +84,7 @@ Deployment on Netlify
 Create a GitHub Repository:
 
 Initialize a git repository and push the project to GitHub:
-sh
-Copy code
+
 git init
 git add .
 git commit -m "initial commit"
