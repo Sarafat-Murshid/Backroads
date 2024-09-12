@@ -17,7 +17,7 @@ Import global styles in index.js.
 Refactor the App.js file to initially contain:
 
 function App() {
-  return <h1>Backroads App</h1>;
+  return "<h1>"Backroads App"</h1>";
 }
 export default App;
 
